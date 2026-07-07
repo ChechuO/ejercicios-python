@@ -78,3 +78,52 @@ print(f"XOR: 10 ^ 3 = {10 ^ 3}")  # 1001
 print(f"NOT: ~10 = {~10}")
 print(f"Desplazamiento a la derecha: 10 >> 2 = {10 >> 2}")  # 0010
 print(f"Desplazamiento a la izquierda: 10 << 2 = {10 << 2}")  # 101000
+print("\n\n")
+
+
+
+print("Estructuras de control\n")
+
+print("Condicionales\n")
+print("if-else\n")
+texto = "Hola"
+
+if texto == "Hola":
+    print("texto es 'Hola'")
+elif texto == "Mundo":
+    print("texto es 'Mundo'")
+else:
+    print("texto no es 'Hola' ni 'Mundo'")
+
+print("\nmatch\n")
+
+dia = "martes"
+match dia:
+    case  "lunes"|"martes"|"miercoles"|"jueves"|"viernes":
+        print("Entre semana")
+    case "sabado"|"domingo":
+        print("Fin de semana")
+
+print("\n")
+
+
+print("Iterativas\n")
+
+for i in range(11):
+    print(i)
+
+i = 0
+
+while i <= 10:
+    print(i)
+    i += 1
+print("\n")
+
+
+print("Excepciones\n")
+try:
+    print(10 / 0)
+except:
+    print("Se ha producido un error")
+finally:
+    print("Ha finalizado el manejo de excepciones")
